@@ -1,108 +1,108 @@
 {
-    "journey": [
+  "journey": [
+    {
+      "section": "personal",
+      "heading": "Please enter your details",
+      "questions": [
         {
-            "section": "personal",
-            "heading": "Please enter your details",
-            "questions": [
-                {
-                    "input_id": "full_name",
-                    "name": "Your full name",
-                    "placeholder": "eg. Joe Bloggs",
-                    "type": "text"
-                },
-                {
-                    "input_id": "email",
-                    "name": "email",
-                    "placeholder": "eg. john@john.com",
-                    "type": "text"
-                },
-                {
-                    "input_id": "password",
-                    "name": "password",
-                    "placeholder": "********",
-                    "type": "text"
-                }
-            ]
+          "name": "full_name",
+          "text": "Your full name",
+          "placeholder": "eg. Joe Bloggs",
+          "type": "text"
         },
         {
-            "section": "country",
-            "heading": "Please tell us where you are",
-            "questions": [
-               {
-                   "input_id": "country_of_residence",
-                   "name": "Country of Residence",
-                   "type": "select",
-                   "options": [
-                       {
-                           "code": "SY",
-                           "display_name": "Syria"
-                       },
-                       {
-                           "code": "UK",
-                           "display_name": "United Kingdom"
-                       },
-                       {
-                           "code": "USA",
-                           "display_name": "United States of America"
-                       },
-                       {
-                           "code": "VI",
-                           "display_name": "Vietnam"
-                       }
-                   ]
-               }
-            ]
+          "name": "email",
+          "text": "email",
+          "placeholder": "eg. john@john.com",
+          "type": "text"
         },
         {
-            "section": "address",
-            "heading": "What's your address?",
-            "questions": [
-                {
-                    "input_id": "addr_1",
-                    "name": "Address line 1",
-                    "placeholder": "eg. 1 Linkin Park",
-                    "type": "text"
-                },
-                {
-                    "input_id": "addr_2",
-                    "name": "Address line 2",
-                    "placeholder": "eg. Mason Gardens",
-                    "type": "text"
-                },
-                {
-                    "input_id": "city",
-                    "name": "City",
-                    "placeholder": "eg. London",
-                    "type": "text"
-                },
-                {
-                    "input_id": "postcode",
-                    "name": "Zip/Postcode",
-                    "placeholder": "eg. NW1 8TQ",
-                    "type": "text"
-                }
-            ]
-        },
-        {
-            "section": "terms",
-            "heading": "Please accept the Terms and Conditions",
-            "questions": [
-                {
-                    "input_id": "terms_1",
-                    "text": "I consent to ipsum lorem and things and stuff and other things.",
-                    "type": "checkbox"
-                },
-                {
-                    "input_id": "terms_2",
-                    "text": "I confirm that Des Lynham PLC have the right to use my data for whatever they wish to",
-                    "type": "text"
-                },
-                {
-                    "input_id": "terms_3",
-                    "text": "I would like to be kept up to date with offers and exclusives from Des Lynham PLC no matter who they sell my data to",
-                    "type": "text"
-                }
-            ]
+          "name": "password",
+          "text": "password",
+          "placeholder": "********",
+          "type": "text"
         }
-    ]
+      ]
+    },
+    {
+      "section": "country",
+      "heading": "Please tell us where you are",
+      "questions": [
+        {
+          "name": "country_of_residence",
+          "text": "Country of Residence",
+          "type": "select",
+          "options": [
+            {
+              "code": "SY",
+              "display_name": "Syria"
+            },
+            {
+              "code": "UK",
+              "display_name": "United Kingdom"
+            },
+            {
+              "code": "USA",
+              "display_name": "United States of America"
+            },
+            {
+              "code": "VI",
+              "display_name": "Vietnam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "address",
+      "heading": "What's your address?",
+      "questions": [
+        {
+          "name": "addr_1",
+          "text": "Address line 1",
+          "placeholder": "eg. 1 Linkin Park",
+          "type": "text"
+        },
+        {
+          "name": "addr_2",
+          "text": "Address line 2",
+          "placeholder": "eg. Mason Gardens",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "text": "City",
+          "placeholder": "eg. London",
+          "type": "text"
+        },
+        {
+          "name": "postcode",
+          "text": "Zip/Postcode",
+          "placeholder": "eg. NW1 8TQ",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "section": "terms",
+      "heading": "Please accept the Terms and Conditions",
+      "questions": [
+        {
+          "name": "terms_1",
+          "text": "I consent to ipsum lorem and things and stuff and other things.",
+          "type": "checkbox"
+        },
+        {
+          "name": "terms_2",
+          "text": "I confirm that Des Lynham PLC have the right to use my data for whatever they wish to",
+          "type": "text"
+        },
+        {
+          "name": "terms_3",
+          "text": "I would like to be kept up to date with offers and exclusives from Des Lynham PLC no matter who they sell my data to",
+          "type": "text"
+        }
+      ]
+    }
+  ]
 }

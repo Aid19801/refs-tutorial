@@ -1,14 +1,20 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -50,7 +56,7 @@ ul li {
   border: 1px solid grey;
   border-radius: 25px;
   padding: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 ul li:hover {
   margin-top: 20px;
@@ -75,7 +81,7 @@ input {
   background: #f7f7c6;
   color: grey;
   border-radius: 25px;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 39px;
   font-size: 22px;
   border: 0;
@@ -115,7 +121,7 @@ button {
   justify-content: center;
   align-content: center;
   align-items: center;
-  transition: .4s;
+  transition: 0.4s;
 }
 .modal:hover {
   background: blue;
@@ -130,4 +136,26 @@ h1 {
 
 .space-around button {
   margin-top: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
