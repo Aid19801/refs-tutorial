@@ -1,0 +1,119 @@
+{
+  "journey": [
+    {
+      "section": "personal",
+      "heading": "Please enter your details",
+      "questions": [
+        {
+          "name": "first_name",
+          "text": "First name",
+          "placeholder": "eg. Joe",
+          "type": "text"
+        },
+        {
+          "name": "last_name",
+          "text": "Last name",
+          "placeholder": "eg. Joe",
+          "type": "text"
+        },
+        {
+          "name": "email",
+          "text": "email",
+          "placeholder": "eg. john@john.com",
+          "type": "text"
+        },
+        {
+          "name": "password",
+          "text": "password",
+          "placeholder": "********",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "section": "country",
+      "heading": "Please tell us where you are",
+      "questions": [
+        {
+          "name": "country_of_residence",
+          "text": "Country of Residence",
+          "type": "select",
+          "options": [
+            {
+              "code": "SY",
+              "display_name": "Syria"
+            },
+            {
+              "code": "UK",
+              "display_name": "United Kingdom"
+            },
+            {
+              "code": "USA",
+              "display_name": "United States of America"
+            },
+            {
+              "code": "VI",
+              "display_name": "Vietnam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "address",
+      "heading": "What's your address?",
+      "questions": [
+        {
+          "name": "addr_1",
+          "text": "Address line 1",
+          "placeholder": "eg. 1 Linkin Park",
+          "type": "text"
+        },
+        {
+          "name": "addr_2",
+          "text": "Address line 2",
+          "placeholder": "eg. Mason Gardens",
+          "type": "text"
+        },
+        {
+          "name": "city",
+          "text": "City",
+          "placeholder": "eg. London",
+          "type": "text"
+        },
+        {
+          "name": "postcode",
+          "text": "Zip/Postcode",
+          "placeholder": "eg. NW1 8TQ",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "section": "terms",
+      "heading": "Please accept the Terms and Conditions",
+      "questions": [
+        {
+          "name": "terms_1",
+          "text": "I consent to ipsum lorem and things and stuff and other things.",
+          "type": "checkbox"
+        },
+        {
+          "name": "terms_2",
+          "text": "I confirm that Des Lynham PLC have the right to use my data for whatever they wish to",
+          "type": "checkbox"
+        },
+        {
+          "name": "terms_3",
+          "text": "I would like to be kept up to date with offers and exclusives from Des Lynham PLC no matter who they sell my data to",
+          "type": "checkbox"
+        }
+      ]
+    },
+    {
+      "section": "confirmation",
+      "heading": "Thanks very much for registering.",
+      "subheading": "We have sent you a confirmation email."
+    }
+  ]
+}

@@ -1,31 +1,37 @@
-import React, {useState, useEffect} from 'react';
-import SignupForm from './SignupForm';
-
-const differentFormNames = ["user_info", "address_details", "terms_conditions"];
+import React from 'react';
+import { SignupPage, HomePage } from './containers';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
-
-  const [ allSignupFormData, updateAllSignupFormData ] = useState({});
-  const [ currentFormName, setCurrentFormName ] = useState("");
-
-  useEffect(() => {
-    setCurrentFormName(differentFormNames[0]);
-  }, [])
-
-  const handleSubmit = (obj) => {
-
-    updateAllSignupFormData({
-      ...allSignupFormData,
-      [currentFormName]: obj
-    });
-    const indexOfNextPage = Object.keys(allSignupFormData).length + 1;
-    setCurrentFormName(differentFormNames[indexOfNextPage]);
-  }
-
   return (
-    <div className="App h-100 flex-center">
-      <SignupForm formName={currentFormName} handleSubmit={handleSubmit} />
-    </div>
+    <Router>
+      <div>
+        <nav className="navbar">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/signup">Signup</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/signup">
+            <SignupPage />
+          </Route>
+          <Route path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
