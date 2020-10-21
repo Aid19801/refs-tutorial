@@ -5,9 +5,15 @@
       "heading": "Please enter your details",
       "questions": [
         {
-          "name": "full_name",
-          "text": "Your full name",
-          "placeholder": "eg. Joe Bloggs",
+          "name": "first_name",
+          "text": "First name",
+          "placeholder": "eg. Joe",
+          "type": "text"
+        },
+        {
+          "name": "last_name",
+          "text": "Last name",
+          "placeholder": "eg. Joe",
           "type": "text"
         },
         {
@@ -95,14 +101,19 @@
         {
           "name": "terms_2",
           "text": "I confirm that Des Lynham PLC have the right to use my data for whatever they wish to",
-          "type": "text"
+          "type": "checkbox"
         },
         {
           "name": "terms_3",
           "text": "I would like to be kept up to date with offers and exclusives from Des Lynham PLC no matter who they sell my data to",
-          "type": "text"
+          "type": "checkbox"
         }
       ]
+    },
+    {
+      "section": "confirmation",
+      "heading": "Thanks very much for registering.",
+      "subheading": "We have sent you a confirmation email."
     }
   ]
 }

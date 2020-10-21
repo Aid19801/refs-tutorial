@@ -1,3 +1,7 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,13 +10,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+ul,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -49,21 +59,26 @@ code {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 ul li {
+  margin-left: 20px;
   margin-top: 20px;
   border: 1px solid grey;
   border-radius: 25px;
   padding: 10px;
   transition: 0.5s;
 }
+
 ul li:hover {
   margin-top: 20px;
   border: 1px solid grey;
   border-radius: 25px;
   padding: 10px;
-  background: red;
+  background: orange;
 }
 ul li p.users__email {
   color: grey;
@@ -158,4 +173,21 @@ h1 {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+select {
+  border: 3px solid orange;
+  padding: 10px;
+  width: 250px;
+  background: lightgrey;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 16px;
+}
+
+.w-40 {
+  width: 40vw;
 }
