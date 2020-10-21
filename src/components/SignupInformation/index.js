@@ -1,14 +1,9 @@
 import React from "react";
 
-function SignupInformation({ heading, subheading, buttonText, handleSubmit }) {
+function SignupInformation() {
   return (
     <div className="mt-30">
-      <h4>{heading}</h4>
-      <p>{subheading}</p>
-
-      <div className="btn-container">
-        <button onClick={handleSubmit}>{buttonText}</button>
-      </div>
+      <h4>I am a signup information component</h4>
     </div>
   );
 }
